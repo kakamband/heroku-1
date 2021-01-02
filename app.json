@@ -1,0 +1,58 @@
+{
+  "name": "libDrive",
+  "description": "libDrive is a media library manager, similar to Plex, that organizes Google Drive folders and offers an intuitive interface to explore them",
+  "keywords": [
+    "gdrive",
+    "drive",
+    "indexing",
+    "movies",
+    "movie",
+    "google-drive",
+    "libdrive",
+    "plex"
+  ],
+  "website": "https://github.com/libDrive/libDrive",
+  "repository": "https://github.com/libDrive/libDrive",
+  "logo": "https://avatars2.githubusercontent.com/u/75073550?v=4",
+  "success_url": "/#/",
+  "env": {
+    "ENVIRON_MODE": {
+      "description": "Don't change this.",
+      "value": "True"
+    },
+    "account_list": {
+      "description": "A list of accounts used to access the app.",
+      "value": "[{'username': 'USERNAME_1', 'password': 'PASSWORD_1', 'auth': 'mxuGDZArVRMPOMJgvnYrznYhNatofvuA', 'pic': ''}, {'username': 'USERNAME_2', 'password': 'PASSWORD_2', 'auth': 'CPoJcfbKTTaEBuhUrmbAXaPmcRIXiscG', 'pic': ''}]"
+    },
+    "category_list": {
+      "description": "A list of libraries.",
+      "value": "[{'name': 'THIS CAN BE ANYTHING YOU WANT', 'type': 'movies OR tv', 'id': 'GOOGLE DRIVE FOLDER ID', 'driveId': 'GOOGLE DRIVE TEAMDRIVE ID'}, {'name': 'THIS CAN BE ANYTHING YOU WANT', 'type': 'movies OR tv', 'id': 'GOOGLE DRIVE FOLDER ID', 'driveId': 'GOOGLE DRIVE TEAMDRIVE ID'}]"
+    },
+    "client_id": {
+      "description": "The client ID made from your Google Developers API.",
+      "value": ""
+    },
+    "client_secret": {
+      "description": "The client secret made from your Google Developers API.",
+      "value": ""
+    },
+    "refresh_token": {
+      "description": "A refresh token from Google.",
+      "value": ""
+    },
+    "secret_key": {
+      "description": "A secret key for using the admin panel (make sure to remember it).",
+      "generator": "secret"
+    },
+    "tmdb_api_key": {
+      "description": "The API key given when making a TMDB developer account.",
+      "value": ""
+    }
+  },
+  "image": "heroku/python",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}

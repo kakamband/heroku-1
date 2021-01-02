@@ -230,4 +230,4 @@ def pingAPI():
 
 
 if __name__ == "__main__":
-    app.run(threaded=True)
+    app.run(host="0.0.0.0", port=os.environ.get("PORT", "31145"), threaded=True)

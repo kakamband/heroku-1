@@ -230,4 +230,4 @@ def pingAPI():
 
 
 if __name__ == "__main__":
-    app.run(port=31145, threaded=True)
+    app.run(threaded=True)

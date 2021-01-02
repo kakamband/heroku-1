@@ -42,7 +42,7 @@
     },
     "secret_key": {
       "description": "A secret key for using the admin panel (make sure to remember it).",
-      "generator": "secret"
+      "value": ""
     },
     "tmdb_api_key": {
       "description": "The API key given when making a TMDB developer account.",
